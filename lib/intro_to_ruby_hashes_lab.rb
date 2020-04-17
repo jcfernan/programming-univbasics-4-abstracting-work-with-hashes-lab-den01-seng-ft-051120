@@ -8,6 +8,10 @@ end
 
 def update_counting_hash(hash, key)
   fruit = {:apples => 3}
-  fruit [:apples] = 1
+  if fruit [:apples]
   fruit [:apples] = fruit [:apples] + 1
+else
+  fruit [:apple] = 1
+end
+hash
 end
